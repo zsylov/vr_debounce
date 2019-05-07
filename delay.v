@@ -1,0 +1,77 @@
+//`timescale 1ps/1ps
+module delay(
+						input Sys_clk,//12Mhz
+						input H2L_sig,
+						input L2H_sig,
+						input Sys_reset,
+						output Pin_out
+					);
+parameter T1ms =14 'd12048;//1ms
+//***************************************
+//1ms count
+//*************************
+reg [13:0] cnt_1;
+reg cnt_En;
+always @ (posedge Sys_clk or negedge Sys_reset)
+	if(!Sys_reset)
+		cnt_1 <= 14'd0;
+	else if(cnt_1 == T1ms  && cnt_En)// cnt_En is enable counter
+				cnt_1 <= 14'd0;
+	else if(cnt_En)
+			cnt_1 <= cnt_1+1'b1;
+	else if(!cnt_En)
+			cnt_1 <= 1'd0;
+			
+//*************
+//15ms count
+//***************
+reg [3:0] count_ms;
+
+always @ (posedge Sys_clk or negedge Sys_reset)
+	if(!Sys_reset)
+		begin
+			count_ms <= 4'd0;
+		end 
+	else if (cnt_En && cnt_1 ==T1ms)
+				count_ms <= count_ms +1'b1;
+	else if(!cnt_En)
+			count_ms <= 1'b0;
+///********************************************************
+
+reg Pin_out_r;
+reg [1:0] i;
+always @ (posedge Sys_clk or negedge Sys_reset)
+	if(!Sys_reset)
+		begin
+			i <= 2'd0;
+			Pin_out_r <= 1'b0;
+			cnt_En <= 1'b0;
+		end
+	else case(i)
+				2'd0: 
+					if(H2L_sig)
+						begin
+							i <= 2'd1;
+						end 
+					else if(L2H_sig)
+							i <= 2'd2;
+					2'd1:
+						if(count_ms ==4'd15)
+							begin
+								cnt_En <= 1'b0;
+								Pin_out_r <= 1'b1;
+								i <= 2'd0;
+							end 
+						else cnt_En <= 1'b1;
+					2'd2:
+						if(count_ms ==4'd15)
+							begin
+								cnt_En <= 1'b0;
+								Pin_out_r <= 1'b0;
+								i <= 2'd0;
+							end 
+						else cnt_En <= 1'b1;
+			endcase
+//**************************************			
+assign Pin_out = Pin_out_r;
+endmodule

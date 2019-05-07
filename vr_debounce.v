@@ -1,0 +1,22 @@
+module vr_debounce(
+							input Sys_clk,
+							input Sys_reset,
+							input Pin_in,
+							output Pin_out
+						);
+						
+wire Q_Sig;					
+	vir_key_module U1 (
+							.sclk(Sys_clk),
+							.rst_n(Sys_reset),
+							.In_Sig(Pin_in),
+							.Q_Sig(Q_Sig)
+						);
+						
+ debouce    U2(	
+						.Sys_clk(Sys_clk),
+						.Sys_reset(Sys_reset),
+						.Pin_in(Q_Sig),
+						.Pin_out(Pin_out)
+					);
+endmodule

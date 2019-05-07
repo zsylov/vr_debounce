@@ -1,0 +1,162 @@
+|vr_debounce
+Sys_clk => Sys_clk.IN2
+Sys_reset => Sys_reset.IN2
+Pin_in => Pin_in.IN1
+Pin_out <= debouce:U2.Pin_out
+
+
+|vr_debounce|vir_key_module:U1
+sclk => isCount.CLK
+sclk => isBounce.CLK
+sclk => i[0].CLK
+sclk => i[1].CLK
+sclk => i[2].CLK
+sclk => i[3].CLK
+sclk => Count_8ms[0].CLK
+sclk => Count_8ms[1].CLK
+sclk => Count_8ms[2].CLK
+sclk => Count_8ms[3].CLK
+sclk => Count_8ms[4].CLK
+sclk => Count_8ms[5].CLK
+sclk => Count_8ms[6].CLK
+sclk => Count_8ms[7].CLK
+sclk => Count_8ms[8].CLK
+sclk => Count_8ms[9].CLK
+sclk => Count_8ms[10].CLK
+sclk => Count_8ms[11].CLK
+sclk => Count_8ms[12].CLK
+sclk => Count_8ms[13].CLK
+sclk => Count_8ms[14].CLK
+sclk => Count_8ms[15].CLK
+sclk => Count_8ms[16].CLK
+sclk => Count_8ms[17].CLK
+sclk => F2.CLK
+sclk => F1.CLK
+rst_n => Count_8ms[0].ACLR
+rst_n => Count_8ms[1].ACLR
+rst_n => Count_8ms[2].ACLR
+rst_n => Count_8ms[3].ACLR
+rst_n => Count_8ms[4].ACLR
+rst_n => Count_8ms[5].ACLR
+rst_n => Count_8ms[6].ACLR
+rst_n => Count_8ms[7].ACLR
+rst_n => Count_8ms[8].ACLR
+rst_n => Count_8ms[9].ACLR
+rst_n => Count_8ms[10].ACLR
+rst_n => Count_8ms[11].ACLR
+rst_n => Count_8ms[12].ACLR
+rst_n => Count_8ms[13].ACLR
+rst_n => Count_8ms[14].ACLR
+rst_n => Count_8ms[15].ACLR
+rst_n => Count_8ms[16].ACLR
+rst_n => Count_8ms[17].ACLR
+rst_n => isCount.ACLR
+rst_n => isBounce.PRESET
+rst_n => i[0].ACLR
+rst_n => i[1].ACLR
+rst_n => i[2].ACLR
+rst_n => i[3].ACLR
+rst_n => F2.PRESET
+rst_n => F1.PRESET
+In_Sig => F1.DATAIN
+Q_Sig <= isBounce.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|vr_debounce|debouce:U2
+Sys_clk => Sys_clk.IN2
+Sys_reset => Sys_reset.IN2
+Pin_in => Pin_in.IN1
+Pin_out <= delay:delay_inst.Pin_out
+
+
+|vr_debounce|debouce:U2|detect:detect_inst
+Sys_clk => L2H_Sig_r1.CLK
+Sys_clk => L2H_Sig_r0.CLK
+Sys_clk => H2L_Sig_r1.CLK
+Sys_clk => H2L_Sig_r0.CLK
+Sys_clk => cnt1[0].CLK
+Sys_clk => cnt1[1].CLK
+Sys_clk => cnt1[2].CLK
+Sys_clk => cnt1[3].CLK
+Sys_clk => cnt1[4].CLK
+Sys_clk => cnt1[5].CLK
+Sys_clk => cnt1[6].CLK
+Sys_clk => cnt1[7].CLK
+Sys_clk => cnt1[8].CLK
+Sys_clk => cnt1[9].CLK
+Sys_clk => cnt1[10].CLK
+Sys_clk => isEn.CLK
+Sys_reset => cnt1[0].ACLR
+Sys_reset => cnt1[1].ACLR
+Sys_reset => cnt1[2].ACLR
+Sys_reset => cnt1[3].ACLR
+Sys_reset => cnt1[4].ACLR
+Sys_reset => cnt1[5].ACLR
+Sys_reset => cnt1[6].ACLR
+Sys_reset => cnt1[7].ACLR
+Sys_reset => cnt1[8].ACLR
+Sys_reset => cnt1[9].ACLR
+Sys_reset => cnt1[10].ACLR
+Sys_reset => isEn.ACLR
+Sys_reset => L2H_Sig_r1.ACLR
+Sys_reset => L2H_Sig_r0.ACLR
+Sys_reset => H2L_Sig_r1.PRESET
+Sys_reset => H2L_Sig_r0.PRESET
+Pin_in => L2H_Sig_r0.DATAIN
+Pin_in => H2L_Sig_r0.DATAIN
+H2L_Sig <= H2L_Sig.DB_MAX_OUTPUT_PORT_TYPE
+L2H_Sig <= L2H_Sig.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|vr_debounce|debouce:U2|delay:delay_inst
+Sys_clk => cnt_En.CLK
+Sys_clk => Pin_out_r.CLK
+Sys_clk => count_ms[0].CLK
+Sys_clk => count_ms[1].CLK
+Sys_clk => count_ms[2].CLK
+Sys_clk => count_ms[3].CLK
+Sys_clk => cnt_1[0].CLK
+Sys_clk => cnt_1[1].CLK
+Sys_clk => cnt_1[2].CLK
+Sys_clk => cnt_1[3].CLK
+Sys_clk => cnt_1[4].CLK
+Sys_clk => cnt_1[5].CLK
+Sys_clk => cnt_1[6].CLK
+Sys_clk => cnt_1[7].CLK
+Sys_clk => cnt_1[8].CLK
+Sys_clk => cnt_1[9].CLK
+Sys_clk => cnt_1[10].CLK
+Sys_clk => cnt_1[11].CLK
+Sys_clk => cnt_1[12].CLK
+Sys_clk => cnt_1[13].CLK
+Sys_clk => i~4.DATAIN
+H2L_sig => i.OUTPUTSELECT
+H2L_sig => i.OUTPUTSELECT
+H2L_sig => i.OUTPUTSELECT
+L2H_sig => i.OUTPUTSELECT
+L2H_sig => i.OUTPUTSELECT
+L2H_sig => i.OUTPUTSELECT
+Sys_reset => cnt_1[0].ACLR
+Sys_reset => cnt_1[1].ACLR
+Sys_reset => cnt_1[2].ACLR
+Sys_reset => cnt_1[3].ACLR
+Sys_reset => cnt_1[4].ACLR
+Sys_reset => cnt_1[5].ACLR
+Sys_reset => cnt_1[6].ACLR
+Sys_reset => cnt_1[7].ACLR
+Sys_reset => cnt_1[8].ACLR
+Sys_reset => cnt_1[9].ACLR
+Sys_reset => cnt_1[10].ACLR
+Sys_reset => cnt_1[11].ACLR
+Sys_reset => cnt_1[12].ACLR
+Sys_reset => cnt_1[13].ACLR
+Sys_reset => cnt_En.ACLR
+Sys_reset => Pin_out_r.ACLR
+Sys_reset => count_ms[0].ACLR
+Sys_reset => count_ms[1].ACLR
+Sys_reset => count_ms[2].ACLR
+Sys_reset => count_ms[3].ACLR
+Sys_reset => i~6.DATAIN
+Pin_out <= Pin_out_r.DB_MAX_OUTPUT_PORT_TYPE
+
+

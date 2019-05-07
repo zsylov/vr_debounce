@@ -1,0 +1,125 @@
+m255
+K3
+13
+cModel Technology
+Z0 dF:\CSDN\vr_debounce\vr_debounce\simulation\modelsim
+vdebouce
+IDGC==eJalheKg:;ZVdV^`3
+V9;]Jb:9:OdcQdYKT@VH<^1
+Z1 dF:\CSDN\vr_debounce\vr_debounce\simulation\modelsim
+w1557234168
+8F:/CSDN/vr_debounce/vr_debounce/debounce.v
+FF:/CSDN/vr_debounce/vr_debounce/debounce.v
+L0 1
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+Z4 !s92 -vlog01compat -work work +incdir+F:/CSDN/vr_debounce/vr_debounce -O0
+!i10b 1
+!s100 alLK`IOM]iVCW]oz`oQ8c1
+!s85 0
+!s108 1557239271.914000
+!s107 F:/CSDN/vr_debounce/vr_debounce/debounce.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/CSDN/vr_debounce/vr_debounce|F:/CSDN/vr_debounce/vr_debounce/debounce.v|
+!s101 -O0
+vdelay
+IgkLIG8?IH?b?`cKik9i7n0
+VNH=9gCFR;D0MXGlYdULlQ0
+R1
+w1557237828
+8F:/CSDN/vr_debounce/vr_debounce/delay.v
+FF:/CSDN/vr_debounce/vr_debounce/delay.v
+L0 2
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 Pg@_]klaX>JBQlV9QdV?[2
+!s85 0
+!s108 1557239271.680000
+!s107 F:/CSDN/vr_debounce/vr_debounce/delay.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/CSDN/vr_debounce/vr_debounce|F:/CSDN/vr_debounce/vr_debounce/delay.v|
+!s101 -O0
+vdetect
+IL@<8a6<8[;We[Nm;a4<4H2
+VS`<[b?Fh8H6VK2Sg0>GTM2
+R1
+w1557239240
+8F:/CSDN/vr_debounce/vr_debounce/detect.v
+FF:/CSDN/vr_debounce/vr_debounce/detect.v
+L0 2
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 Uk:S?]A6QI93`ViH9C;_k2
+!s85 0
+!s108 1557239271.461000
+!s107 F:/CSDN/vr_debounce/vr_debounce/detect.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/CSDN/vr_debounce/vr_debounce|F:/CSDN/vr_debounce/vr_debounce/detect.v|
+!s101 -O0
+vvir_key_module
+IAhgLKYHaaW[Ad1ZiRDzB23
+V=3DObC@8<H]NgD[beD7oo0
+R1
+w1557233104
+8F:/CSDN/vr_debounce/vr_debounce/vir_key_module.v
+FF:/CSDN/vr_debounce/vr_debounce/vir_key_module.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 ^5HbET51^N_aTzJVX]KnW2
+!s85 0
+!s108 1557239271.196000
+!s107 F:/CSDN/vr_debounce/vr_debounce/vir_key_module.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/CSDN/vr_debounce/vr_debounce|F:/CSDN/vr_debounce/vr_debounce/vir_key_module.v|
+!s101 -O0
+vvir_key_top_vlg_tst
+!i10b 1
+!s100 FQWI1TjL7HW?h>oDO<]A43
+IoXhRBcbQCzSMRV7X>VfSz0
+VQ<4Ah`H?^VZ68zGDgz@zV3
+R1
+w1557238038
+8F:/CSDN/vr_debounce/vr_debounce/simulation/modelsim/vr_debounce.vt
+FF:/CSDN/vr_debounce/vr_debounce/simulation/modelsim/vr_debounce.vt
+L0 28
+R2
+r1
+!s85 0
+31
+!s108 1557239272.366000
+!s107 F:/CSDN/vr_debounce/vr_debounce/simulation/modelsim/vr_debounce.vt|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/CSDN/vr_debounce/vr_debounce/simulation/modelsim|F:/CSDN/vr_debounce/vr_debounce/simulation/modelsim/vr_debounce.vt|
+!s101 -O0
+R3
+!s92 -vlog01compat -work work +incdir+F:/CSDN/vr_debounce/vr_debounce/simulation/modelsim -O0
+vvr_debounce
+I^GmUz?bj0A_VO<Ed19]Kn1
+VbHBVQXOTi7Wn0hUeiVE;22
+R1
+w1557238914
+8F:/CSDN/vr_debounce/vr_debounce/vr_debounce.v
+FF:/CSDN/vr_debounce/vr_debounce/vr_debounce.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 2HG8SnFBeNaH5NXREAN6]0
+!s85 0
+!s108 1557239272.132000
+!s107 F:/CSDN/vr_debounce/vr_debounce/vr_debounce.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/CSDN/vr_debounce/vr_debounce|F:/CSDN/vr_debounce/vr_debounce/vr_debounce.v|
+!s101 -O0

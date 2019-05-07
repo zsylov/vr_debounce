@@ -1,0 +1,7 @@
+module debouce(	
+						input Sys_clk,
+						input Sys_reset,
+						input Pin_in,
+						output Pin_out
+					);
+wire 
