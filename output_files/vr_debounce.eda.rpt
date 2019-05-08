@@ -1,5 +1,5 @@
 EDA Netlist Writer report for vr_debounce
-Tue May 07 22:27:40 2019
+Wed May 08 22:18:00 2019
 Quartus II 32-bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
 
 
@@ -36,7 +36,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Tue May 07 22:27:40 2019 ;
+; EDA Netlist Writer Status ; Successful - Wed May 08 22:18:00 2019 ;
 ; Revision Name             ; vr_debounce                           ;
 ; Top-level Entity Name     ; vr_debounce                           ;
 ; Family                    ; Cyclone IV GX                         ;
@@ -88,7 +88,7 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 32-bit EDA Netlist Writer
     Info: Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
-    Info: Processing started: Tue May 07 22:27:39 2019
+    Info: Processing started: Wed May 08 22:17:59 2019
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off vr_debounce -c vr_debounce
 Info (204019): Generated file vr_debounce_6_1200mv_85c_slow.vo in folder "F:/CSDN/vr_debounce/vr_debounce/simulation/modelsim/" for EDA simulation tool
 Info (204019): Generated file vr_debounce_6_1200mv_0c_slow.vo in folder "F:/CSDN/vr_debounce/vr_debounce/simulation/modelsim/" for EDA simulation tool
@@ -100,7 +100,7 @@ Info (204019): Generated file vr_debounce_min_1200mv_0c_v_fast.sdo in folder "F:
 Info (204019): Generated file vr_debounce_v.sdo in folder "F:/CSDN/vr_debounce/vr_debounce/simulation/modelsim/" for EDA simulation tool
 Info: Quartus II 32-bit EDA Netlist Writer was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 363 megabytes
-    Info: Processing ended: Tue May 07 22:27:40 2019
+    Info: Processing ended: Wed May 08 22:18:00 2019
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

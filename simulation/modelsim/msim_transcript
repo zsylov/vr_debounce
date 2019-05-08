@@ -43,14 +43,14 @@
 # 
 # vlog -vlog01compat -work work +incdir+F:/CSDN/vr_debounce/vr_debounce/simulation/modelsim {F:/CSDN/vr_debounce/vr_debounce/simulation/modelsim/vr_debounce.vt}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module vir_key_top_vlg_tst
+# -- Compiling module vr_debounce_vlg_tst
 # 
 # Top level modules:
-# 	vir_key_top_vlg_tst
+# 	vr_debounce_vlg_tst
 # 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L rtl_work -L work -voptargs="+acc"  vir_key_top_vlg_tst
-# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps vir_key_top_vlg_tst 
-# Loading work.vir_key_top_vlg_tst
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L rtl_work -L work -voptargs="+acc"  vr_debounce_vlg_tst
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps vr_debounce_vlg_tst 
+# Loading work.vr_debounce_vlg_tst
 # Loading work.vr_debounce
 # Loading work.vir_key_module
 # Loading work.debouce
@@ -63,6 +63,7 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run 1000 us
-add wave -position end  sim:/vir_key_top_vlg_tst/i1/Q_Sig
+add wave -position end  sim:/vr_debounce_vlg_tst/i1/Q_Sig
 restart
+run -all
 run -all

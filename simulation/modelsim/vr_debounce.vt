@@ -25,7 +25,7 @@
 // 
 
 `timescale 1 ps/ 1 ps
-module vir_key_top_vlg_tst();
+module vr_debounce_vlg_tst();
 // constants                                           
 // general purpose registers
 
@@ -52,7 +52,7 @@ initial
 
    /**************************/
    
-   parameter T1MS = 14'd12048;
+   parameter T1MS = 15'd22048;
 	
    /**************************/	
    
